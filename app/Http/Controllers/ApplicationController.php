@@ -68,7 +68,7 @@ class ApplicationController extends Controller
 
         // dump($discord, $region, $role, $rank, $peak, $availability, $concerns, $inclusion, $questions, $suggestions);
 
-        $teamWebhook = 'https://discord.com/api/webhooks/876532581401755709/rnaa0sJrA6y453WB8xTWfmJWxrLg060Kx7ae5xBKLiulIVqz14uhdHJmMiuwZeQIsJJ2';
+        $teamWebhook = '';
 
         $response = Http::post($teamWebhook, [
             'embeds' => [
@@ -171,7 +171,7 @@ class ApplicationController extends Controller
             $suggestions = $request->input('suggestions');
         }
 
-        $altioraWebhook = 'https://discord.com/api/webhooks/876532688801124352/m3UU2Bs3Eot66HGKssSfcUdTlghXcCxw0kFAixDyea32Wg4xzCaFnAAdKpOirevnTU89';
+        $altioraWebhook = '';
 
         $response = Http::post($altioraWebhook, [
             'embeds' => [
@@ -260,7 +260,7 @@ class ApplicationController extends Controller
             $suggestions = $request->input('suggestions');
         }
 
-        $staffWebhook = 'https://discord.com/api/webhooks/875830219733364737/2B5JbMYHjgKRgTBVpFpx2ADckeqUqdnibaD4sbanlir9GtWjduqyXqrNBY38d0njKgpW';
+        $staffWebhook = '';
 
         $response = Http::post($staffWebhook, [
             'embeds' => [
