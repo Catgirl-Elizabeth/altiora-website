@@ -51,7 +51,7 @@ class GeneralController extends Controller
 
         $saved = $message->save();
         if ($saved) {
-            $webhookUrl = 'https://discord.com/api/webhooks/875934590269788160/g9LdT4ljLau0AaFUYYOpot7veDNwH33ModvltO_9Hm5SX3sdMxy8IR9ONUBHNKfyhp55';
+            $webhookUrl = '';
             $sent = Http::post($webhookUrl, [
                 'embeds' => [
                     [
