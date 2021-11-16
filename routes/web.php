@@ -23,7 +23,6 @@ Route::get('/backend', 'HomeController@index')->name('home')->middleware('auth')
 Route::get('/about-us', 'GeneralController@about')->name('about-us');
 Route::get('/legal-notice', 'GeneralController@legal')->name('legal-notice');
 Route::get('/privacy-policy', 'GeneralController@showPolicy')->name('privacy-policy');
-Route::get('/contact', 'GeneralController@contact')->name('contact');
 Route::get('/feedback', 'GeneralController@feedback')->name('contact.feedback');
 
 Route::get('/applications', 'GeneralController@applications')->name('contact.applications');
@@ -55,6 +54,9 @@ Route::post('/documents', 'FileController@store')->name('downloads.store')->midd
 Route::get('/wallpapers', 'WallpaperController@index')->name('wallpapers');
 Route::get('/wallpapers/upload', 'WallpaperController@create')->name('wallpapers.create')->middleware('auth');
 Route::post('/wallpapers', 'WallpaperController@store')->name('wallpapers.store')->middleware('auth');
+
+Route::get('/contact', 'GeneralController@contact')->name('contact.request');
+Route::post('/contact', 'GeneralController@sendMessage')->name('contact.request.send');
 
 Route::get('/make-user', 'HomeController@createUser')->name('user.create')->middleware('auth');
 Route::get('/test', 'GeneralController@test')->name('test')->middleware('auth');

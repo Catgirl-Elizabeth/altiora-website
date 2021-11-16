@@ -21,6 +21,9 @@ html {
         background-repeat: no-repeat;
         background-attachment: fixed;
         margin-bottom: 240px;
+        .fsize-20 {
+            font-size: 20px;
+        }
 
         section {
             padding-top: 3rem;
@@ -442,7 +445,7 @@ html {
                     filter: none;
                 }
             }
-            
+
         }
 
         .staff-modal {
