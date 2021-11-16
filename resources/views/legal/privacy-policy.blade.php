@@ -45,9 +45,9 @@
                 <p>We use the information we collect in various ways, including to:</p>
 
                 <ul>
-                    <li>Provide, operate, and maintain our webste</li>
-                    <li>Improve, personalize, and expand our webste</li>
-                    <li>Understand and analyze how you use our webste</li>
+                    <li>Provide, operate, and maintain our website</li>
+                    <li>Improve, personalize, and expand our website</li>
+                    <li>Understand and analyze how you use our website</li>
                     <li>Find and prevent fraud</li>
                 </ul>
 
